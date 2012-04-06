@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# copy custom configuration
+cp linux/conf/.gitconfig ~/
+cp linux/conf/.vimrc ~/
+
+# create workspace
+mkdir -p ~/workspace
+sudo ln -s ~/workspace /workspace
+
+# install favorite applications
+sudo apt-get install vim
+sudo apt-get install gthumb
+
+# install webkit related packages
