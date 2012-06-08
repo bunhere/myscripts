@@ -14,8 +14,6 @@ set pastetoggle=<Ins>
 
 set tags+=./tags,../tags,../../tags,../../../tags
 
-map <F5> :TlistToggle<CR>
-
 func! Sts()
   let st = expand("<cword>")
   exe "sts ".st
@@ -28,3 +26,17 @@ endfunc
 
 nmap ,tj :call Tj()<cr>
 nmap ,st :call Sts()<cr>
+
+set pastetoggle=<F2>
+
+" Open and close all the three plugins on the same time
+nmap <F5>   :TrinityToggleAll<CR>
+
+" Open and close the srcexpl.vim separately
+nmap <F6>   :TrinityToggleSourceExplorer<CR>
+
+" Open and close the taglist.vim separately
+nmap <F7>  :TrinityToggleTagList<CR>
+
+" Open and close the NERD_tree.vim separately
+nmap <F8>  :TrinityToggleNERDTree<CR> 

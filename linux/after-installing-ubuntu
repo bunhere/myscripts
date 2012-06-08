@@ -4,6 +4,7 @@
 cp linux/conf/.bashrc ~/
 cp linux/conf/.gitconfig ~/
 cp linux/conf/.vimrc ~/
+cp linux/conf/.vim/plugin/* ~/.vim/plugin/
 
 # create workspace
 mkdir -p ~/workspace
@@ -18,3 +19,6 @@ sudo apt-get install git
 sudo apt-get install gitk
 
 # install webkit related packages
+
+#setting of virtualbox
+#sudo usermod -G vboxusers -a ryuan
