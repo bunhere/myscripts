@@ -6,6 +6,7 @@ set smartindent
 set ruler
 set title
 set tabstop=4
+set expandtab
 
 syntax on
 set shiftwidth=4
